@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BFEFFF">
+
+
+    <androidx.percentlayout.widget.PercentRelativeLayout
+        android:id="@+id/one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/single"
+        app:layout_heightPercent = "43%"
+        app:layout_widthPercent  = "80%"
+        app:layout_marginTopPercent = "15%"
+        android:layout_centerHorizontal="true"
+        >
+
+
+        <TextView
+            android:id="@+id/current_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            app:layout_marginTopPercent = "15%"
+            app:layout_marginRightPercent = "20%"
+            android:textSize="18dp"
+            android:textColor="#F000"
+            android:text="1"
+            />
+
+        <TextView
+            android:id="@+id/total_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            app:layout_marginTopPercent = "15%"
+            app:layout_marginRightPercent = "13%"
+            android:textSize="18dp"
+            android:text="/1"
+            />
+
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_widthPercent  = "80%"
+            android:layout_centerHorizontal="true"
+            android:textColor="#F000"
+            android:text="Test Contect"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            app:layout_marginTopPercent = "45%"
+            />
+
+
+    </androidx.percentlayout.widget.PercentRelativeLayout>
+
+
+    <EditText
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent  = "80%"
+        app:layout_heightPercent  = "10%"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="#FFF"
+        android:layout_below="@id/one"
+        android:layout_marginTop="60dp"
+        />
+
+    <Button
+        android:id="@+id/make_sure"
+        android:layout_below="@id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:text="确认"
+        />
+
+
+</androidx.percentlayout.widget.PercentRelativeLayout>

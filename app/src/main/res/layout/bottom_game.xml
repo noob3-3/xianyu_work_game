@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+    <androidx.percentlayout.widget.PercentRelativeLayout
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_shape"
+        app:layout_heightPercent="50%"
+        >
+
+        <Button
+            android:id="@+id/one"
+            android:textSize="18dp"
+            android:text="脑筋急转弯"
+            android:textStyle="italic"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:background="@drawable/background_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_widthPercent="80%"
+            app:layout_heightPercent="16%"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            />
+
+
+
+        <Button
+            android:id="@+id/two"
+            android:textSize="18dp"
+            android:text="笑话"
+            android:textStyle="italic"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:background="@drawable/background_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_widthPercent="80%"
+            app:layout_heightPercent="16%"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+
+        <Button
+            android:id="@+id/three"
+            android:textSize="18dp"
+            android:text="迷语"
+            android:textStyle="italic"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:background="@drawable/background_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_widthPercent="80%"
+            app:layout_heightPercent="16%"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            />
+
+
+
+
+    </androidx.percentlayout.widget.PercentRelativeLayout>
+
+
+</androidx.percentlayout.widget.PercentRelativeLayout>

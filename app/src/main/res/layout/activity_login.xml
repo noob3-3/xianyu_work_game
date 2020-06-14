@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_1"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--  用户名  -->
+    <EditText
+        android:id="@+id/user"
+        app:layout_marginTopPercent = "40%"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent = "80%"
+        android:hint="用户名"
+        />
+
+    <!--  密码  -->
+    <EditText
+        android:id="@+id/password"
+        android:layout_below="@id/user"
+        app:layout_marginTopPercent = "6%"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent = "80%"
+        android:hint="密码"
+        />
+
+    <!--  登录按钮  -->
+    <!--<Button-->
+        <!--android:id="@+id/login"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!---->
+        <!--/>-->
+
+
+</androidx.percentlayout.widget.PercentRelativeLayout>
