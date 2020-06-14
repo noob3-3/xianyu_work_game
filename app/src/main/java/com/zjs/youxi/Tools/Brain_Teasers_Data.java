@@ -1,5 +1,7 @@
 package com.zjs.youxi.Tools;
 
+import com.google.gson.Gson;
+
 import java.util.List;
 
 public class Brain_Teasers_Data {
@@ -13,6 +15,18 @@ public class Brain_Teasers_Data {
     private int status;
     private String msg;
     private ResultBean result;
+
+    public static Brain_Teasers_Data Get_Brain_Teasers_Data()
+    {
+        String key = "8789d7324e904d78";
+        //脑筋急转弯
+        String url = "https://api.jisuapi.com/jzw/search?appkey="+key+"&pagenum=1&pagesize=5";
+        String data = Server.getServerResult( url, "GET" );
+        Gson gson = new Gson();
+        Brain_Teasers_Data z = gson.fromJson(data, Brain_Teasers_Data.class );
+        return z;
+
+    }
 
     public int getStatus() {
         return status;

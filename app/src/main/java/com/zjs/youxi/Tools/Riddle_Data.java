@@ -1,5 +1,7 @@
 package com.zjs.youxi.Tools;
 
+import com.google.gson.Gson;
+
 import java.util.List;
 
 public class Riddle_Data {
@@ -13,6 +15,19 @@ public class Riddle_Data {
     private int status;
     private String msg;
     private ResultBean result;
+
+    public Riddle_Data Get_Riddle_Data()
+    {
+        String key = "8789d7324e904d78";
+        //谜语
+        String url = "https://api.jisuapi.com/miyu/search?appkey="+key;
+        String data = Server.getServerResult( url, "GET" );
+        Gson gson = new Gson();
+        Riddle_Data z = gson.fromJson(data, Riddle_Data.class );
+        return z;
+
+    }
+
 
     public int getStatus() {
         return status;
