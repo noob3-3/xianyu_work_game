@@ -17,11 +17,11 @@ public class Joke_Data {
     private ResultBean result;
 
 
-    public Joke_Data Get_Joke_Data()
+    public static Joke_Data Get_Joke_Data()
     {
         String key = "8789d7324e904d78";
         //笑话
-        String url = "https://api.jisuapi.com/xiaohua/text?pagenum=1&pagesize=20&sort=addtime&appkey="+key;
+        String url = "https://api.jisuapi.com/xiaohua/text?pagenum=1&pagesize=20&appkey="+key;
         String data = Server.getServerResult( url, "GET" );
         Gson gson = new Gson();
         Joke_Data z = gson.fromJson(data, Joke_Data.class );

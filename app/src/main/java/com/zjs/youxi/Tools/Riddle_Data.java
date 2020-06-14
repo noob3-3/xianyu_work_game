@@ -16,7 +16,7 @@ public class Riddle_Data {
     private String msg;
     private ResultBean result;
 
-    public Riddle_Data Get_Riddle_Data()
+    public static Riddle_Data Get_Riddle_Data()
     {
         String key = "8789d7324e904d78";
         //谜语
